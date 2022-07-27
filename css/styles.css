@@ -1,3 +1,83 @@
-@import "node_modules/normalize/normalize.css";
+@import "../node_modules/normalize.css/normalize.css";
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap&effect=neon");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap&effect=neon");
+
+/* Common */
+:root {
+    --color-primary: #2584ff;
+    --color-secondary: #00d9ff;
+
+    --color-heading: #1b0760;
+    --color-body: #918ca4;
+    --color-body-darker: #5c5577;
+
+    --color-border: #bbb;
+    --border-radius: 30px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-heading);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 7rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 1.8rem;
+    }
+    h1 {
+        font-size: 8rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 2.4rem;
+    }
+}
+
+/* General */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* === === === === ==== */
