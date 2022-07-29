@@ -13,10 +13,32 @@
 
         <title>To Do List</title>
     </head>
-    <body>
-        <input type="text" />
-        <button>Add</button>
 
-        <script></script>
+    <body>
+        <div class="todo">
+            <div class="todo__nav">
+                <a class="btn btn--left" href="../index.html"
+                    ><i class="bi bi-house-fill"></i>Home</a
+                >
+            </div>
+
+            <div class="todo-container">
+                <div id="add__board" class="input-group">
+                    <input
+                        id="add__input"
+                        class="input"
+                        type="text"
+                        placeholder="Add new task here..."
+                    />
+                    <button id="add__btn">
+                        <i class="bi bi-plus-square"></i>
+                    </button>
+                </div>
+
+                <div id="todo__board"></div>
+            </div>
+        </div>
+
+        <script src="../js/to-do.js"></script>
     </body>
 </html>
