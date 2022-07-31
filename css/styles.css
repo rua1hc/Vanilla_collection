@@ -248,9 +248,10 @@ a {
 
 #add__btn {
     font-size: 3rem;
-    margin: 0 1rem;
+    margin-right: 2rem;
 
     color: blue;
+    background-color: #fff;
     border: 0;
 }
 #add__btn:hover {
